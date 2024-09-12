@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="evaluacion.ico" type="image/x-icon" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="agregar" id="agregar">
+      <input type="text" name="Ingreso" id="toDo" />
+      <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <div class="lista" id="lista"></div>
+    <!-- ↓ cortesía de chatgpt ↓ -->
+    <div id="customAlert" class="alert-container" style="display: none">
+      <div class="alert-box">
+        <div style="display: flex">
+          <!-- esta chanchada es mía -->
+          <img src="alerta.png" alt="Alerta" class="alert-image" />
+          <p>Tarea agregada!</p>
+        </div>
+        <button id="closeAlert">Cerrar</button>
+      </div>
+    </div>
+    <!-- ↑ cortesía de chatgpt ↑ -->
+    <script src="script.js"></script>
+  </body>
+</html>
