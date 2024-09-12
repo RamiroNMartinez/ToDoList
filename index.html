@@ -21,6 +21,7 @@
             class="ingreso"
             id="toDo"
             autocomplete="off"
+            placeholder="Introduzca la tarea..."
           />
           <button id="btnAgregar">Agregar</button>
         </div>
@@ -33,7 +34,11 @@
         <div class="alert-box">
           <div style="display: flex">
             <!-- esta chanchada es mía -->
-            <img src="img/alerta.png" alt="Alerta" class="alert-image" />
+            <img
+              src="img/alerta.png"
+              alt="Tarea agregada"
+              class="alert-image"
+            />
             <p>Tarea agregada!</p>
           </div>
           <button id="closeAlert">Cerrar</button>
@@ -44,17 +49,27 @@
       <div id="errorAlert" class="alert-container" style="display: none">
         <div class="alert-box">
           <div style="display: flex">
-            <img src="img/cerrar.png" alt="" />
+            <img
+              src="img/cerrar.png"
+              alt="Error de carga"
+              class="alert-image"
+            />
             <p>Ingrese una tarea para agregar</p>
           </div>
           <button id="cerrarAlerta">Cerrar</button>
         </div>
       </div>
 
+      <!--
+      Queda pendiente de update hasta que resuelva cómo hacer para editar los labels y 
+      elimiinar de a una las tareas tachadas/realizadas
+     
       <footer>
         <button id="editar">Editar Tareas</button>
         <button id="eliminar">Eliminar Tareas</button>
       </footer>
+
+      -->
     </div>
 
     <script src="script.js"></script>

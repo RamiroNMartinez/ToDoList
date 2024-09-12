@@ -15,6 +15,7 @@ function agregarTarea(){
     const textInput2 = document.createElement('del');
     // nuevoDiv.id=contador;
     // checkbox.id=contador++;
+    nuevoDiv.classList.add('contenedor_tarea')
     checkbox.type = 'checkbox';
     textInput.textContent = tarea.value;
     textInput2.textContent = tarea.value;
@@ -31,10 +32,12 @@ function agregarTarea(){
         if(evento.target.checked){
             textInput.style.display = 'none';
             textInput2.style.display = 'inline';
+            nuevoDiv.classList.add('sombreado');
         }
         else{
             textInput2.style.display = 'none';
             textInput.style.display = 'inline';
+            nuevoDiv.classList.remove('sombreado');
         }
     });
 
